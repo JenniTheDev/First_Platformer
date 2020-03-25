@@ -15,8 +15,12 @@ namespace Platformer.Gameplay
         {
             enemy._collider.enabled = false;
             enemy.control.enabled = false;
-            if (enemy._audio && enemy.ouch)
+            enemy.spriteRenderer.enabled = false;
+            enemy.confettiParticals.Play();
+
+            if(enemy._audio && enemy.ouch)
                 enemy._audio.PlayOneShot(enemy.ouch);
+
         }
     }
 }

@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 2651140156555518892}
   - component: {fileID: 772289407653213039}
   - component: {fileID: 5843668731025413174}
-  - component: {fileID: 114914739023491778}
   m_Layer: 13
   m_Name: Enemy
   m_TagString: Untagged
@@ -177,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  confettiParticals: {fileID: 3882692454139253516}
 --- !u!82 &5843668731025413174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -273,33 +273,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114914739023491778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661912868639658944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e0430a9dc6ae0b4a81c4cb4674809a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerBody: {fileID: 0}
-  onTriggerEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3882692454139253516}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &5845208881823074816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -380,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 7276764443248859406, guid: 087ff866c6a14f841a4a77a4168eecc5,
         type: 3}
       propertyPath: m_Name
-      value: ConfettiCelebration
+      value: DeathParticles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 087ff866c6a14f841a4a77a4168eecc5, type: 3}
